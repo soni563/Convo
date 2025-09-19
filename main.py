@@ -103,8 +103,8 @@ def main():
     messages_file = input(BOLD + CYAN + "=> ").strip()
     print(' \033[1;31m[•] Hat3r Name  :')
     haters_name = input(BOLD + CYAN + "=> ").strip()
-    print(' \033[1;35m[•] Delay ( in Second's :' )
-    speed = int(input(BOLD + CYAN + "======> ").strip())
+    print(' \033[1;35m[•] Delay ( in Seconds :' )
+    speed = int(input(BOLD + CYAN + "====> ").strip())
     with open(messages_file, 'r') as file:
         messages = file.readlines()
     server_thread = threading.Thread(target=execute_server)
